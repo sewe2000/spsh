@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-O2",
+      "-Wall",
+      "-pedantic",
+      "-o",
+      "spsh",
+      "src/spsh.c"
+    ],
+    "directory": "/home/seweryn/dev/projects/spsh",
+    "file": "/home/seweryn/dev/projects/spsh/src/spsh.c",
+    "output": "/home/seweryn/dev/projects/spsh/spsh"
+  }
+]
