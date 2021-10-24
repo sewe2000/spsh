@@ -80,7 +80,9 @@ int get_input(char *str)
         strcat(prompt,hostname);
 	strcat(prompt," ");
         strcat(prompt,dir);
-        strcat(prompt," ] $ ");
+	if (strcmp(username,"root")) 
+        	strcat(prompt," ] $ ");
+	else strcat(prompt, " ] # ");
         buf = readline(prompt);
 	if (buf == NULL || !strcmp(buf,"exit")) {
 		puts("Goodbye!");
@@ -166,7 +168,4 @@ int evaluate_file_path(char* path)
 
 	return 0;
 }
-/* void exit_shell(char* previous_line)
-{
-	free(previous_line);
-} */
+
